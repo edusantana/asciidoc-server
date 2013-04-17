@@ -1,0 +1,32 @@
+== CGI Python script
+This is a cgi python script to run a asciidoc server that reads
+files from github.
+
+=== How to install the server
+
+Look at http://jonathanferretti.com/blog/?p=76 to learn how to
+install python cgi script server.
+
+- copy this entire folder to /var/www
+
+=== How to configure server
+
+- Configure the server generation at `cgi-bin/github.py`
+
+=== How users use the server
+
+==== Automatic with asciidoc-server service at github
+
+TIP: Each server has it's own generation configuration, users' repositories 
+must follow the server's instructions.
+
+- Your project must be at a github repository.
+- Configure the asciidoc-server service at your repository settings.
+
+Every time the users do a push, the server will generate the files.
+
+==== Accessing the generation page
+
+Go to server/pull-pdf.html, and click to generate.
+
+
